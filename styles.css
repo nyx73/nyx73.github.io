@@ -1,0 +1,68 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.logo img {
+  height: 50px; /* Adjust height as needed */
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* About section */
+#about {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.social-links img {
+  width: 40px; /* Adjust size as needed */
+  margin: 0 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+
+#about {
+  background-image: url('b.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; /* Ensures text is readable on top of the background image */
+  /* Setting the background color to black with 70% opacity */
+  background-color: rgba(0, 0, 0, 0.7);
+}
