@@ -101,7 +101,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative py-28 px-6 overflow-hidden"
+      className="relative py-28 px-6 lg:px-8 overflow-hidden"
       style={{ backgroundColor: "var(--glass)" }}
       ref={ref}
     >

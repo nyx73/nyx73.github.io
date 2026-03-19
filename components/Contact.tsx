@@ -62,13 +62,13 @@ export default function Contact() {
   const inputClass = `w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 glass`;
 
   return (
-    <section id="contact" className="relative py-28 px-6 overflow-hidden" ref={ref}>
+    <section id="contact" className="relative py-28 px-6 lg:px-8 overflow-hidden" ref={ref}>
       <div
         className="absolute bottom-0 right-0 w-80 h-80 rounded-full filter blur-3xl opacity-10"
         style={{ backgroundColor: "var(--gradient-2)" }}
       />
 
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
