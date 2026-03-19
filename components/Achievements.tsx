@@ -55,7 +55,7 @@ export default function Achievements() {
   return (
     <section
       id="achievements"
-      className="relative py-28 px-6 overflow-hidden"
+      className="relative py-28 px-6 lg:px-8 overflow-hidden"
       style={{ backgroundColor: "var(--glass)" }}
       ref={ref}
     >
@@ -64,7 +64,7 @@ export default function Achievements() {
         style={{ backgroundColor: "var(--gradient-1)" }}
       />
 
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}

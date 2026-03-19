@@ -19,7 +19,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-28 px-6 overflow-hidden"
+      className="relative py-28 px-6 lg:px-8 overflow-hidden"
       ref={ref}
     >
       <div
