@@ -1,0 +1,48 @@
+RHYTHM CHAVDA
+Computer Engineering Student | Software Developer
+
+CONTACT
+Email: rhythmchavda147@gmail.com
+GitHub: https://github.com/nyx73
+LinkedIn: https://www.linkedin.com/in/rhythmchavda/
+LeetCode: https://leetcode.com/u/rhythmchavda073/
+
+PROFILE
+Computer Engineering student building practical software across web development,
+Android, and applied AI. Interested in turning real problems into useful,
+well-structured applications and learning through hands-on projects.
+
+EDUCATION
+B.Tech, Computer Engineering — currently pursuing
+Relevant study: Data Structures and Algorithms, Database Management Systems,
+Operating Systems, Object-Oriented Programming, and Computer Networks.
+
+TECHNOLOGIES
+Languages: Java, Python, JavaScript
+Web and mobile: React, HTML, CSS, Android development
+Backend and data: FastAPI, Firebase, NetworkX, Pandas, REST APIs
+Tools: Git, GitHub, Android Studio, Vite, Tailwind CSS
+
+SELECTED PROJECTS
+Financial Crime Detection | React, FastAPI, Python, NetworkX, Pandas
+Built a full-stack transaction network analysis system to identify suspicious
+multi-hop activity, circular routing, and potential fraud rings. Includes CSV
+ingestion, risk scoring, and an interactive graph visualization.
+Live: https://rift-26-frontend.onrender.com/
+Code: https://github.com/orpheusdark/rift-26/
+
+Traffic-OPS | JavaScript, simulation algorithms
+Created an adaptive traffic operations dashboard prototype that models lane
+queues and adjusts simulated signal timing based on traffic density.
+Code: https://github.com/nyx73
+
+Shopigo | HTML, CSS, JavaScript
+Built a responsive e-commerce storefront with product browsing, cart and
+wishlist interactions, and mobile-first navigation.
+Live: https://nyx73.github.io/Frontend-Battle-2025/
+Code: https://github.com/nyx73/Frontend-Battle-2025
+
+ACHIEVEMENTS
+Second Prize — DBMS Decathon
+Third Prize — Techtraid engineering hackathon
+Participant — RIFT'26, Frontend Battle, Odoo Challenge, and Tech Expo 2026

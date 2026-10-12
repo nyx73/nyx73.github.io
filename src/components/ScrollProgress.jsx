@@ -1,27 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 export function ScrollProgress() {
-  const [progress, setProgress] = useState(0);
+  const barRef = useRef(null);
+  const trackRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const totalScroll = document.documentElement.scrollTop || document.body.scrollTop;
-      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      if (windowHeight === 0) return;
-      const scrollPercent = (totalScroll / windowHeight) * 100;
-      setProgress(scrollPercent);
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const trackHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = trackHeight > 0
+        ? Math.min(1, Math.max(0, window.scrollY / trackHeight))
+        : 0;
+      if (barRef.current) barRef.current.style.transform = `scaleX(${progress})`;
+      if (trackRef.current) trackRef.current.setAttribute('aria-valuenow', String(Math.round(progress * 100)));
     };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => {
+      if (!frame) frame = window.requestAnimationFrame(update);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    update();
+    return () => {
+      if (frame) window.cancelAnimationFrame(frame);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 h-[2.5px] bg-transparent pointer-events-none">
-      <div
-        className="h-full bg-gradient-to-r from-sky-500 via-cyan-400 to-indigo-500 transition-all duration-100 ease-out"
-        style={{ width: `${progress}%` }}
-      />
+    <div ref={trackRef} className="scroll-progress-track" role="progressbar" aria-label="Page reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div ref={barRef} className="scroll-progress-bar" />
     </div>
   );
 }
