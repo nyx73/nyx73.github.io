@@ -53,8 +53,6 @@ src/
 └── data/
     ├── education.js
     └── projects.js
-public/
-└── rhythm-chavda-resume.txt
 .github/workflows/
 └── deploy.yml               # GitHub Pages deployment workflow
 ~~~
